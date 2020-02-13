@@ -13,7 +13,7 @@ class ReadString extends React.Component {
         // save the `dataKey` to local component state for later reference
         this.setState({ dataKey });
         window.drizzle = drizzle;
-    }
+    };
 
     render() {
         // get the contract state from drizzleState
@@ -24,7 +24,7 @@ class ReadString extends React.Component {
 
         // if it exists, then we display its value
         return <p>My Stored String: {myString && myString.value}</p>;
-    }
+    };
 }
 
 export default ReadString;
